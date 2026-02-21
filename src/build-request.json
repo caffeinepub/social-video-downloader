@@ -1,0 +1,107 @@
+{
+  "kind": "build_request",
+  "title": "Create video downloader for Instagram and Facebook",
+  "projectName": "Social Video Downloader",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a frontend interface with input fields for Instagram and Facebook video URLs, allowing users to paste video links they want to download",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "User can paste Instagram video URLs into an input field",
+        "User can paste Facebook video URLs into an input field",
+        "Input validation shows clear error messages for invalid URLs",
+        "Interface clearly indicates which platforms are supported"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement backend functionality to fetch and process Instagram video content from provided URLs, extracting the video file without watermarks",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend accepts Instagram video URLs as input",
+        "System extracts video content from Instagram",
+        "Downloaded videos do not contain watermarks",
+        "Error handling for invalid or private Instagram URLs"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Implement backend functionality to fetch and process Facebook video content from provided URLs, extracting the video file without watermarks",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend accepts Facebook video URLs as input",
+        "System extracts video content from Facebook",
+        "Downloaded videos do not contain watermarks",
+        "Error handling for invalid or private Facebook URLs"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Provide download functionality that allows users to save the processed videos to their local device",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "User can trigger download after video is processed",
+        "Downloaded file has appropriate video format and extension",
+        "Download includes original video quality",
+        "Clear feedback during download process"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Design a modern, visually distinct interface with a creative color scheme (avoiding blue and purple), clear typography, and an intuitive layout that emphasizes simplicity and ease of use for video downloading",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Interface uses a cohesive, non-blue/purple color palette",
+        "Typography is clear and readable",
+        "Layout guides users naturally through the download process",
+        "Visual design is consistent across all pages and components"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must not violate Instagram or Facebook terms of service",
+    "Only process publicly accessible video content",
+    "Do not store user-provided URLs or downloaded videos on the backend"
+  ],
+  "nonGoals": [
+    "Downloading private or restricted videos",
+    "Bulk video downloading",
+    "User authentication or account management",
+    "Video editing or format conversion features",
+    "Support for other social media platforms beyond Instagram and Facebook"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hero background image with abstract gradient pattern suitable for a video downloader app (hero-bg.dim_1920x1080.png)",
+      "Social media icon representing video download concept (download-icon.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-21T06:31:11.806Z",
+  "summary": "The implementation includes a frontend with URL input validation for Instagram and Facebook, backend functions to fetch video links, download functionality, and a modern interface with a non-blue/purple color scheme. However, the backend logic appears incomplete or non-functional for actual video extraction, and watermark removal is not explicitly demonstrated.",
+  "missing_requirements": [
+    {
+      "id": "REQ-2",
+      "requirement": "Backend extracts video content from Instagram without watermarks",
+      "reason": "The backend function getInstagramDownloadLink makes a simple HTTP request to Instagram's API endpoint, but there is no evidence of actual video extraction logic, watermark removal processing, or proper parsing of Instagram's response format. The frontend attempts to parse responses, but the backend does not implement the extraction.",
+      "evidence": [
+        "backend/main.mo",
+        "frontend/src/hooks/useVideoDownload.ts"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "requirement": "Backend extracts video content from Facebook without watermarks",
+      "reason": "The backend function getFacebookDownloadLink makes a simple HTTP request to Facebook Graph API, but there is no evidence of actual video extraction logic, watermark removal processing, or proper parsing. Similar to Instagram, the extraction logic is missing from the backend.",
+      "evidence": [
+        "backend/main.mo",
+        "frontend/src/hooks/useVideoDownload.ts"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Internet Identity authentication integration",
+      "reason": "The BuildRequest does not mention user authentication or account management (explicitly listed in non-goals). However, the implementation includes full Internet Identity provider setup with login/logout functionality.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Dark mode support",
+      "reason": "Dark mode theming was not requested in the BuildRequest or requirements. The implementation includes comprehensive dark mode color schemes in the CSS.",
+      "evidence": [
+        "frontend/src/index.css",
+        "frontend/index.css"
+      ]
+    }
+  ],
+  "confidence": 0.85,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/DownloadStatus.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/VideoDownloader.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/hooks/useVideoDownload.ts",
+    "frontend/src/index.css",
+    "frontend/src/lib/urlValidator.ts",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

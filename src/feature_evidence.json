@@ -1,0 +1,69 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-frontend-interface-with-input-fields-for-instagram-and-facebook-video-urls-allowing-users-to-paste-video-links-they-want-to-download",
+      "featureTitle": "Create a frontend interface with input fields for Instagram and Facebook video URLs, allowing users to paste video links they want to download",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/VideoDownloader.tsx",
+        "frontend/src/lib/urlValidator.ts"
+      ],
+      "components": [
+        "http-outcalls@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-provide-download-functionality-that-allows-users-to-save-the-processed-videos-to-their-local-device",
+      "featureTitle": "Provide download functionality that allows users to save the processed videos to their local device",
+      "files": [
+        "frontend/src/components/DownloadStatus.tsx",
+        "frontend/src/components/VideoDownloader.tsx",
+        "frontend/src/hooks/useVideoDownload.ts"
+      ],
+      "components": [
+        "http-outcalls@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-modern-visually-distinct-interface-with-a-creative-color-scheme-avoiding-blue-and-purple-clear-typography-and-an-intuitive-layout-that-emphasizes-simplicity-and-ease-of-use-for-video-downloading",
+      "featureTitle": "Design a modern, visually distinct interface with a creative color scheme (avoiding blue and purple), clear typography, and an intuitive layout that emphasizes simplicity and ease of use for video downloading",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/HeroSection.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "http-outcalls@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

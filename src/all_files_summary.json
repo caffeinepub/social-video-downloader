@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Motoko actor that provides HTTP outcall functions to fetch Instagram and Facebook video download links by making requests to their respective APIs.",
+  "feature_evidence.json": "Feature evidence report documenting three implemented features: frontend URL input interface, download functionality, and modern UI design with warm color scheme avoiding blue/purple.",
+  "frontend-file-summaries.txt": "JSON object containing brief descriptions of all frontend source files including components, hooks, utilities, and styling configuration.",
+  "frontend/index.css": "Tailwind CSS base styles defining OKLCH color system variables for light and dark modes with warm neutral tones, avoiding blue and purple colors.",
+  "frontend/index.html": "HTML entry point for the React application with title 'Social Video Downloader' and root div for mounting.",
+  "frontend/src/App.tsx": "Root React component that composes HeroSection, VideoDownloader, and Footer into a full-page layout with flexbox structure.",
+  "frontend/src/components/DownloadStatus.tsx": "React component displaying success, error, or alert states for video downloads with appropriate icons, styling, and retry button.",
+  "frontend/src/components/Footer.tsx": "Footer component displaying copyright notice and attribution link to caffeine.ai with UTM tracking parameters based on hostname.",
+  "frontend/src/components/HeroSection.tsx": "Hero banner component with background image, gradient overlay, download icon, and centered text introducing the video downloader app.",
+  "frontend/src/components/VideoDownloader.tsx": "Main downloader component with tabbed interface for Instagram/Facebook, URL input fields with validation, download buttons, and status display integration.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages the backend actor instance with authentication support, handling both anonymous and authenticated identities.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context and hook providing Internet Identity authentication with login, logout, and identity state management using AuthClient.",
+  "frontend/src/hooks/useQueries.ts": "Minimal placeholder file as video download logic is handled directly in useVideoDownload hook instead of using React Query patterns.",
+  "frontend/src/hooks/useVideoDownload.ts": "React hook that manages video download functionality for Instagram and Facebook, extracting video IDs from URLs, calling backend actor methods, parsing responses to find video URLs, and initiating browser downloads with error handling.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables defining a complete design system including light/dark themes, color schemes using OKLCH color space, and base styling for typography and layout.",
+  "frontend/src/lib/urlValidator.ts": "Utility functions that validate Instagram and Facebook video URLs using regex patterns, returning validation results with specific error messages for invalid or empty URLs.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClient for data fetching and InternetIdentityProvider for authentication, rendering the main App component.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the default theme with custom colors using OKLCH color space, container settings, font families, border radius variables, shadows, and animations for accordion components.",
+  "project_state.json": "Project metadata tracking the Social Video Downloader application state, including completed features for frontend UI and download functionality, and pending backend implementation for Instagram and Facebook video processing."
+}

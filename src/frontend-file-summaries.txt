@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes the hero section, video downloader, and footer into a single-page layout.",
+  "frontend/src/components/HeroSection.tsx": "Hero section component with background image, app title, and tagline that introduces the video downloader functionality.",
+  "frontend/src/components/VideoDownloader.tsx": "Main video downloader component with tabbed interface for Instagram and Facebook, URL input validation, and download triggering functionality.",
+  "frontend/src/components/DownloadStatus.tsx": "Status component that displays success, error, or loading states for video download operations with appropriate styling and retry options.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright information and attribution link to caffeine.ai with UTM tracking parameters.",
+  "frontend/src/hooks/useVideoDownload.ts": "Custom React hook that manages video download state, calls backend methods based on platform, extracts video IDs from URLs, and initiates browser downloads.",
+  "frontend/src/lib/urlValidator.ts": "URL validation utility functions that check Instagram and Facebook URL formats and return validation status with error messages.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for React Query hooks (video download logic is handled in useVideoDownload hook instead).",
+  "frontend/src/index.css": "Global styles with OKLCH color system using warm orange/amber tones for light mode and dark mode, avoiding blue and purple colors.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom font family (Inter), extended color palette using OKLCH tokens, and custom border radius and shadow utilities."
+}
